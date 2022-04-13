@@ -67,7 +67,7 @@
             }
         }
 
-        @media only screen and (max-width: 599px) {
+        @media only screen and (min-width: 200px) {
             header {
                 text-align: center;
                 margin: 90px 60px;
@@ -119,54 +119,15 @@
         }
 
         @media only screen and (min-width: 600px) {
-            header {
-                text-align: center;
-                margin: 90px 60px;
-                border: 2px solid black;
-            }
 
             header h1 {
                 font-size: 4rem;
-                animation: rainbow_text 9s linear infinite;
-                text-shadow: 3px 3px 1px black;
-                margin: 0;
-            }
-
-            main {
-                display: flex;
-                justify-content: space-evenly;
-                perspective: 500px;
-                background-color: blue;
-                color: white;
-                flex-wrap: wrap;
             }
 
             main img {
                 height: 300px;
             }
 
-            main div {
-                padding: 10px;
-                /* background: rgba(0, 0, 255, .5); */
-                transition: .3s;
-                border: 2px black solid;
-                margin: 20px 100px;
-            }
-
-            main div:hover {
-                /* box-shadow: 5px 5px 9px 3px black; */
-                transform-style: preserve-3d;
-                transform: rotateX(4deg) translateZ(30px);
-            }
-
-
-            footer {
-                margin: 60px 0px;
-            }
-
-            footer p {
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -198,6 +159,8 @@
     <footer>
         <p>ʕ•ᴥ•ʔ</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
