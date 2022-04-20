@@ -70,15 +70,28 @@
         @media only screen and (min-width: 200px) {
             header {
                 text-align: center;
-                margin: 90px 60px;
-                border: 2px solid black;
+                height: 100%;
+                /* padding: 200px; */
+            }
+
+            header div {
+                /* position: fixed; */
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+            }
+
+            header img {
+                width: 200px;
             }
 
             header h1 {
                 font-size: 2rem;
                 animation: rainbow_text 9s linear infinite;
                 text-shadow: 3px 3px 1px black;
-                margin: 0;
+                margin: 0px 0px;
             }
 
             main {
@@ -135,9 +148,13 @@
 <body>
 
     <header>
-        <h1>~KEREM'S PORTFOLIO WEBSITE~</h1>
-        <p>welcome to my portfolio website!!11!1 i make all sorts of things that connect people and overall cool stuff
-            (づ￣ ³￣)づ</p>
+        <div>
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif">
+            <h1>~KEREM'S PORTFOLIO WEBSITE~</h1>
+            <p>welcome to my portfolio website!!11!1 i make all sorts of things that connect people and overall cool
+                stuff
+                (づ￣ ³￣)づ</p>
+        </div>
     </header>
 
     <main>
