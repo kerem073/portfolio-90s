@@ -4,145 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homepage_style.css">
     <title>ke-rem</title>
-    <style>
-        h1,
-        h2,
-        h3,
-        p {
-            font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
-
-        }
-
-        body {
-            margin: 0;
-            overflow-x: hidden;
-        }
-
-
-        /* The animation code */
-        @keyframes rainbow_text {
-            0% {
-                color: red;
-            }
-
-            10% {
-                color: orangered;
-            }
-
-            20% {
-                color: orange;
-            }
-
-            30% {
-                color: yellow;
-            }
-
-            40% {
-                color: green;
-            }
-
-            50% {
-                color: cyan;
-            }
-
-            60% {
-                color: blue;
-            }
-
-            70% {
-                color: purple;
-            }
-
-            80% {
-                color: hotpink;
-            }
-
-            90% {
-                color: rgb(255, 0, 68);
-            }
-
-            100% {
-                color: red;
-            }
-        }
-
-        @media only screen and (min-width: 200px) {
-            header {
-                text-align: center;
-                height: 100%;
-                /* padding: 200px; */
-            }
-
-            header div {
-                /* position: fixed; */
-                position: absolute;
-                top: 45%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 90%;
-            }
-
-            header img {
-                width: 200px;
-            }
-
-            header h1 {
-                font-size: 2rem;
-                animation: rainbow_text 9s linear infinite;
-                text-shadow: 3px 3px 1px black;
-                margin: 0px 0px;
-            }
-
-            main {
-                display: flex;
-                justify-content: space-evenly;
-                perspective: 500px;
-                background-color: blue;
-                color: white;
-                flex-wrap: wrap;
-            }
-
-            main img {
-                height: 230px;
-            }
-
-            main div {
-                padding: 10px;
-                /* background: rgba(0, 0, 255, .5); */
-                transition: .3s;
-                border: 2px black solid;
-                margin: 20px 100px;
-            }
-
-            main div:hover {
-                /* box-shadow: 5px 5px 9px 3px black; */
-                transform-style: preserve-3d;
-                transform: rotateX(4deg) translateZ(30px);
-            }
-
-
-            footer {
-                margin: 60px 0px;
-            }
-
-            footer p {
-                text-align: center;
-            }
-        }
-
-        @media only screen and (min-width: 600px) {
-
-            header h1 {
-                font-size: 4rem;
-            }
-
-            main img {
-                height: 300px;
-            }
-
-        }
-    </style>
 </head>
 
 <body>
@@ -159,18 +23,18 @@
 
     <main>
         <h2>my work</h2>
-        <div>
+        <a href="/qualtagh/">
             <img src="qualtagh.png">
             <h3>qualtagh</h3>
-        </div>
-        <div>
+        </a>
+        <a href="/spicy honey/">
             <img src="spicyhoney.png">
             <h3>spicy honey</h3>
-        </div>
-        <div>
+        </a>
+        <a href="/side-wall/">
             <img src="side-wall.png">
             <h3>side-wall</h3>
-        </div>
+        </a>
     </main>
 
     <footer>

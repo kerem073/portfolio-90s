@@ -1,0 +1,125 @@
+/* The animation code */
+@keyframes rainbow_text {
+    0% {
+        color: red;
+    }
+
+    10% {
+        color: orangered;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    40% {
+        color: green;
+    }
+
+    50% {
+        color: cyan;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: purple;
+    }
+
+    80% {
+        color: hotpink;
+    }
+
+    90% {
+        color: rgb(255, 0, 68);
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 200px) {
+    header {
+        text-align: center;
+        height: 100%;
+        /* padding: 200px; */
+    }
+
+    header div {
+        /* position: fixed; */
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        animation: rainbow_text 9s linear infinite;
+        text-shadow: 3px 3px 1px black;
+        margin: 0px 0px;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-evenly;
+        perspective: 500px;
+        background-color: blue;
+        color: white;
+        flex-wrap: wrap;
+        padding: 100px 0px;
+    }
+
+    main img {
+        height: 230px;
+    }
+
+    main a {
+        padding: 10px;
+        /* background: rgba(0, 0, 255, .5); */
+        transition: .3s;
+        border: 2px black solid;
+        margin: 20px 100px;
+        text-decoration: none;
+        color: white;
+    }
+
+    main a:hover {
+        /* box-shadow: 5px 5px 9px 3px black; */
+        transform-style: preserve-3d;
+        transform: rotateX(4deg) translateZ(30px);
+    }
+
+
+    footer {
+        margin: 60px 0px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    main img {
+        height: 300px;
+    }
+
+}
